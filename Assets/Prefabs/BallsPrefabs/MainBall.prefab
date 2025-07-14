@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1282518697932685934}
   - component: {fileID: 4210271409357993859}
   - component: {fileID: 4658237062951799781}
-  - component: {fileID: -6017849813095443343}
-  m_Layer: 0
+  - component: {fileID: 3432464714927170471}
+  m_Layer: 7
   m_Name: MainBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &-6017849813095443343
+--- !u!54 &3432464714927170471
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,5 +134,5 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0

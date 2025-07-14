@@ -5,27 +5,22 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public GameObject cueVisual;
     public Rigidbody[] balls;
     public float minMagnitude;
-    private float magnitude;
-    private bool allStoped = true;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
+    public float strikeForce;
+    private bool allStoped;
     void Update()
     {
+        allStoped = true;
         foreach (Rigidbody ball in balls)
         {
-            magnitude = ball.linearVelocity.magnitude;
+            float magnitude = ball.linearVelocity.magnitude;
             if (ball != null)
             {
                 if (magnitude < minMagnitude)
                 {
-                    magnitude = 0;
+                    ball.linearVelocity = Vector3.zero;
+                    ball.angularVelocity = Vector3.zero;
                 }
-                else if (magnitude >= minMagnitude)
+                else
                 {
                     allStoped = false;
                 }
@@ -33,6 +28,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         }
         cueVisual.SetActive(allStoped);
-        balls[0].AddForce(Vector3.forward * 0.1f, ForceMode.Impulse);
+        if (cueVisual.activeSelf && Input.GetMouseButton(0))
+        {
+            balls[0].AddForce(Quaternion.AngleAxis(90f, Vector3.back) * cueVisual.transform.forward * strikeForce, ForceMode.Impulse);
+        }
+
     }
 }

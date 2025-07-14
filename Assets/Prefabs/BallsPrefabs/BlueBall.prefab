@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2823091955883627174, guid: 8a98dc849ad1bad48885c9032e456cfc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2823091955883627174, guid: 8a98dc849ad1bad48885c9032e456cfc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2823091955883627174, guid: 8a98dc849ad1bad48885c9032e456cfc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2823091955883627174, guid: 8a98dc849ad1bad48885c9032e456cfc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2823091955883627174, guid: 8a98dc849ad1bad48885c9032e456cfc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2823091955883627174, guid: 8a98dc849ad1bad48885c9032e456cfc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -54,7 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 53acd50af6ac53740836ccf7bfb800ab, type: 2}
     - target: {fileID: 8906022189624851815, guid: 8a98dc849ad1bad48885c9032e456cfc, type: 3}
       propertyPath: m_Name
-      value: MainBall Variant
+      value: BlueBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906022189624851815, guid: 8a98dc849ad1bad48885c9032e456cfc, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
